@@ -29,4 +29,14 @@
 # Executables
 *.exe
 *.out
+*.out.dSYM
 *.app
+
+#temporary files and ds store
+.DS_Store
+*IGNORE*
+*TEMP*
+
+.vscode
+setSeed.*
+randSeed.*

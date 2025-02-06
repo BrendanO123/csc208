@@ -25,4 +25,4 @@ John Hopcroft and Robert Tarjan are computer scientists who invented Big O notat
 
 O(1) (constant time/memory), O($ln(n)$) (log time/memory), O(n) (linear time/memory), O($n^2$)... O($n^k$) (polynomial time/memory), O($e^n$) (exponential time/memory), or O($n!$) (factorial time/memory).
 
-There are other ways these can be combined, such as merge sort's O($n * log(n)$) time complexity, but these are the main foundations.
+There are other ways these can be combined, such as merge sort's O($n * log(n)$) time complexity, but these are the main foundations of Big O notation.

@@ -53,6 +53,7 @@ Inputs:*\
 
 Outputs:*\
 $Vertices = (ProjectionMat4 * ViewMat4 * ModelMat4 * $``` vec4```$\left<BlockPositions, 0\right>).xyz$\
+$ = (ProjectionMat4 * \begin{bmatrix}CR.x&CR.y&CR.z&0\cr CU.x&CU.y&CU.z&0\cr CF.x&CF.y&CF.z&o\cr0&0&0&1\end{bmatrix} * \begin{bmatrix}1&0&0&-CamP.x\cr0&1&0&-CamP.y\cr0&0&1&-CamP.z\cr0&0&0&1\end{bmatrix} * \begin{bmatrix}1&0&0&CL.x\cr0&1&0&CL.y\cr0&0&1&CL.z\cr0&0&0&1\end{bmatrix} * $``` vec4```$\left<BlockPositions, 0\right>).xyz$\
 (Pad the block location into a 4D vector for rotation, apply transformations, and truncate to 3D vector)
 
 *(Additional Inputs and Outputs Are Used for Texture and Normal Vector Lookups for Blocks)

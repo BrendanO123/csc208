@@ -52,6 +52,10 @@ To see this we will start with three points on a plane and keep our lose conditi
 
 Discrete math is a mathematical field that deals exclusively with non-continuous sets of possible input or outputs values. They involve logic or math problems where any given parameter to the problem has a countable number of possible states, such as ($true$ or $false$), or ($1$, $2$, $3$, or $4$) (even if the number of states is infinite, if it is discrete there is a system that if run infinitely long will eventually cover every number). For example, there is not a program that could count every number between $0$ and $1$ in order as there will always be ones skipped over; however, a program could easily count all of the natural numbers if run forever. 
 
+### What are the Main Subcategories of Discrete Math?
+
+The four main subcategories that we will focus on in this class are combinatorics (the study of the number of different pairs, orderings, subsets, or combinations of a set of things), sequences (ordered lists of numbers that can be expressed by a common rule), symbolic logic (combinations of logical statements and rules which can be used to solve complex problems), and graph theory (black magic from the before ages that expresses problems as sets of nodes and lines on a graph).
+
 ### Questions
 
 I would like to know if there is a solution to example three that does not use any other information, such as assuming at least one is truthful, as that is the only problem I could not solve.
@@ -61,3 +65,23 @@ I would like to know if there is a solution to example three that does not use a
 ## Example
 
 For the first value that is placed on the top, $0$, there are $n+1$ ($0$ through $n$ inclusive) possible numbers to pair it with on the bottom of the domino. For each next number placed on the top, the number of possible pairs decreases by one because they will have already been paired with each number less then them. This gives us a series of numbers that counts down from $n+1$ to $1$. This then tells us that the number of combinations is the sum of the series that counts down from $n+1$ to $1$, which in turn means we can use the formula we proved in example number one. Substituting in $n+1$ as our upper limit gives us that $s_{n} = \frac{(n+1)(n+2)}{2}$ where n is the highest number on the domino. We can then use this formula to find that a six sided domino, $s_{6}$, has $\frac{(6+1)(6+2)}{2} = \frac{(7)(8)}{2} = 7*4$ = 28 possible combinations, and a nine sided domino $s_{9} = \frac{(10)(11)}{2} = 5 * 11 = 55$ possible combinations. 
+
+## Discrete Structure Examples
+#### Sets:
+An unordered collection of numbers that does not contain duplicate elements. (This would make it a multi-set).
+#### Functions:
+A formula that takes in a tuple of inputs and outputs a value or set. These can be explicit formulas, such as $2x^2 + 1$, or recursive formulas, such as $f(n) = f(n-1) + f(n-2)$, which require an initial position $+C$ to find the specific solution for the general formula.
+#### Sequences:
+Ordered lists of numbers that can contain duplicates, which are usually used as the discrete representation of continuos functions and integrals (sums of a sequence from $a$ to $n$).
+#### Relations:
+Rules that define relative properties between two or more items, such as $a<b<c$.
+#### Graphs:
+A set of points and connections on a plane that visually represent symmetric (if point $a$ is connected to point $b$, then point $b$ is connected to point $a$), non-reflexive (any given point $a$ is not connected to itself) relations. These can also be used in a more topographical way such as the previous example which looks for intersections of these connections.
+
+## Comprehension
+
+### Reflection 
+The original problem at the top of the section was to find the count of a set of multi-sets. The collection of each domino was a set as dominos did not repeat or have order. Each domino, however, was a multi-set as they were unordered but contained duplicates.
+
+### Questions
+Why do we distinguish between functions and sequences in this class? I thought that a discrete function was just a sequence and vice versa.

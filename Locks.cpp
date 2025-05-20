@@ -31,8 +31,7 @@ int main(){
     int cols = n-df;
     int gap = n-m-1;
 
-    //memory allcation, should make flattened and on heap
-    //float mat[n+1][n+1];
+    //memory allcation
     float* mat = new float[(n+1)*(n+1)];
 
     //basic initializtion loops
@@ -54,7 +53,6 @@ int main(){
     /*** we now have a matrix of every linear equation with the free variables zeroed and ignored
      * we also have the difference of the two adjacent equations baked in instead of the full span row vectors to save time
      * to compensate for the lost information, the lowest row vector from the original equations is appended
-     * aditionally, the span of every vector is denoted to find the gcd(n, m+1) equations that will zero out more efficiently
      * 
      * Initial conditions:
         * matrix: 
@@ -102,11 +100,12 @@ int main(){
             x++;
         }
     }
+    for(int i=0; i<df; i++){cout << "0 ";}
     cout << endl;
 
     delete [] mat;
 
     //Aux Space: O(n^2) for a (n+1)x(n+1) matrix
-    //Time: O(n^2) bc O(n^3) row reduced matrix generation is speed up thanks to O(n) reduction of all but one row vector to span of 2
+    //Time: O(n^2) bc O(n^3) row reduced matrix generation is speed up thanks to O(n) reduction of all but one row vector to span of 3
     return 0;
 }

@@ -4,3 +4,6 @@ This is the general repository for my work in the CSC208 class through the Arlin
 ## Repositories:
 ### Minecraft Clone in GLFW
 Last semester I started on and mainly workded on a C++ Minecraft clone with OpenGL and GLFW. I intened to continue to work on this project this semester to prepare for the regional science fair. For more detail see: https://github.com/BrendanO123/GLFWMinecraftClone.git.
+
+### YHS Coding Club Practice Problems
+This past semester I have joind the YHS Coding Club and gone to a few coding competitions with them. I created a little repository to have a dedicated place to work on coding problems for the club and competitions as well as any other small or single-file programs I might need that are not linked to a larger project. For more detail see: https://github.com/BrendanO123/YHSCodingClubProblems.git. 
